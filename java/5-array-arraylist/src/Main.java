@@ -19,8 +19,15 @@ public class Main {
         int[] ros; //declaration of array. ros is getting defined in the stack;
         ros = new int[5]; //initialisation: actually here object is being created in the memory (heap) at the runtime memory will allocate this is called run time allocation
 
+        // `new` is used to create a object in the heap memory
+        //any reference variable have by default it's run type
 
 
+//        System.out.println(ros[1]);
+
+        String[] arr = new String[4];
+
+        System.out.println(arr[2]);
 
 
 
