@@ -4,7 +4,7 @@ public class MaxWealth {
     }
 
     public int maximumWealth(int[][] accounts) {
-        int[]
+        return -1;
     }
 
 }
