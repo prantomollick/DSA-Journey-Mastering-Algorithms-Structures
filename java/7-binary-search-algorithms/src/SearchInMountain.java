@@ -9,12 +9,13 @@ public class SearchInMountain {
     int search(int[] arr, int target) {
         int peak = peakIndexInMountainArray(arr);
 
-        int firstTry = orderAgnosticBS(arr, target);
-        if( firstTry != -1) {
+        int firstTry = orderAgnosticBS(arr, target, 0, peak);
+        if ( firstTry != -1) {
             return firstTry;
         }
 
         // try to search in second half;
+        return orderAgnosticBS(arr, target, peak + 1, arr.length - 1);
     }
 
 
@@ -41,9 +42,6 @@ public class SearchInMountain {
     }
 
     static int orderAgnosticBS(int[] arr, int target, int start, int end) {
-        int start = 0;
-        int end = arr.length - 1;
-
         boolean isAsc = arr[start] < arr[end];
 
         while(start <= end) {
