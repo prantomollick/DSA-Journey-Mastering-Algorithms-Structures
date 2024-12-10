@@ -10,6 +10,7 @@ public class Palindrome {
         }
 
         str = str.toLowerCase();
+
         for (int i = 0; i < str.length() / 2; i++) {
             char start = str.charAt(i);
             char end = str.charAt(str.length() - i - 1);
